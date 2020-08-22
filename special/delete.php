@@ -1,0 +1,221 @@
+<?php
+session_start();
+//for hiding errors
+error_reporting(E_PARSE | E_ERROR);
+
+
+$con=mysqli_connect('localhost','root');
+$select=mysqli_select_db($con,'project');
+
+
+//Collecting college_id from college_subject table
+$q="select college_id from college ";
+$result=mysqli_query($con,$q);
+$num=mysqli_num_rows($result);
+$i=1;
+
+while($row=mysqli_fetch_assoc($result))
+{
+	$co=$row['college_id'];
+	$c_id[$i]=$co;
+	$i++;
+}
+if(!isset($c_id))
+	header('location:http://localhost/project/error.php');
+	
+
+for($j=1;$j<=$num;$j++)
+{	
+//Displaying results
+$q2="select * from college where college_id='$c_id[$j]'";
+$result2=mysqli_query($con,$q2);
+
+while($row=mysqli_fetch_assoc($result2))
+	{	
+		$n[$j]=$row['name'];
+		$u[$j]=$row['university'];
+		$a[$j]=$row['address'];
+		$e[$j]=$row['email'];
+		$w[$j]=$row['website'];
+		$p[$j]=$row['phone'];
+	}
+}	
+	
+mysqli_close();
+?>
+
+<!DOCTYPE html>
+<head>
+	<title>Delete College</title>
+</head>
+<body>
+	<style type="text/css">
+
+			body{
+				background-image: url(http://localhost/project/images/ok.jpg);
+				background-attachment: fixed;
+			}
+		
+			.last{
+				padding: 300px 20px 200px 20px;
+			}
+
+			.table{
+				background-color:#4c4c4c;
+				padding: 30px;
+				opacity: 0.7;
+				width: 100%;
+			}
+			.table tr,th,td,ul,li
+			{
+				padding: 20px;
+	  			text-align: center;
+	  			list-style: none;
+			}
+			.table th{
+				color:lightgreen;
+				font-size:30px;
+				font-weight: bold;
+			}
+			.last a{
+				color:#cccccc;
+				text-decoration: none;
+			}
+			.last li:hover, a:hover {
+		    	background-color: green;
+				color:black;
+			}
+
+			.copyright{
+				color:#666666;
+				font-family:aral;
+				font-size:20px;
+				padding:50px;
+				padding-bottom:120px;
+				text-align:center;
+				line-height:20px;
+				border-top:1px solid #666666;
+				margin-top:50px;
+			}
+			.main{
+				margin-top: 200px;
+			}
+	</style>
+
+	<link rel="stylesheet" type="text/css" href="http://localhost/project/css/w3.css">
+
+	<div class="w3-container w3-tale w3-xxxlarge w3-padding-16">
+		Delete College
+	</div>
+	<div class="w3-container">		
+
+		<div class="w3-bar w3-green w3-large">
+			
+			<a href="http://localhost/project/index.php" class="w3-bar-item w3-button w3-hover-blue">Home</a>
+			<a href="http://localhost/project/html/contact.html" class="w3-bar-item w3-button">Contact Us</a>
+			<a href="http://localhost/project/html/help.html" class="w3-bar-item w3-button" >Help</a>
+			<a href="http://localhost/project/html/report.html" class="w3-bar-item w3-button">Report</a>
+			<a href="http://localhost/project/html/remarks.html" class="w3-bar-item w3-button">Remarks</a>
+			
+		</div>
+		
+		
+		<div class="w3-center w3-padding-64">
+			<p><h2 class="w3-padding-16 w3-leftbar w3-border-blue w3-pale-blue">Select one to delete</h2></p>
+		</div>
+
+		<table class="w3-table-all">
+			<tr class="w3-red">
+				<th>Tick</th>
+				<th>Name</th>
+				<th>University</th>
+				<th>Address</th>
+				<th>Email</th>
+				<th>Website</th>
+				<th>Phone</th>
+			</tr>
+			<?php
+			for($j=1;$j<=$num;$j++)
+			{
+			?>
+			
+		<form method="POST" action="http://localhost/project/special/del.php" >
+			<tr>
+				<td><input type="radio" name="done" value="<?php echo $c_id[$j]; ?>"></td>
+				<td><?php echo $n[$j]; ?></td>
+				<td><?php echo $u[$j]; ?></td>
+				<td><?php echo $a[$j]; ?></td>
+				<td><?php echo $e[$j]; ?></td>
+				<td><?php echo $w[$j]; ?></td>
+				<td><?php echo $p[$j]; ?></td>
+			</tr>
+			<?php
+			}
+			?>
+		</table>
+			<div class="w3-center w3-padding-48">
+				<input type="submit" name="delete" value="Delete" class="w3-center w3-button w3-blue w3-padding-large w3-hover-red w3-xlarge">
+			</div>
+		</form>
+	</div>
+	
+
+	<footer class="w3-container w3-tale">
+			<div class="last">
+				<table class="table w3-centered">
+					<tr>
+						<th>Menu</th>
+						<th>Our Services</th>
+						<th>Social</th>
+					</tr>
+					<tr>
+						<td>
+							<ul>
+								<li><a href="#">Register</a></li>
+								<li><a href="#">Login</a></li>
+								<li><a href="#">About us</a></li>
+								<li><a href="#">Contact us</a></li>
+							</ul>
+						</td>
+						<td>
+							<ul>
+								<li><a href="#">Carrier Guide</a></li>
+								<li><a href="#">Life Decisions</a></li>
+								<li><a href="#">Fitness Guide</a></li>
+								<li><a href="#">Educational Guide</a></li>
+							</ul>
+						</td>
+						<td>
+							<ul>
+								<li><a href="#">Facebook</a></li>
+								<li><a href="#">Whats app</a></li>
+								<li><a href="#">Twitter</a></li>
+								<li><a href="#">Linkin</a></li>
+							</ul>
+						</td>
+					</tr>
+				</table>
+			</div>
+		
+			<div class="copyright">
+				<p>@2018 Better future for Students. All Rights Reserved. <p><span>Designed with by Subrata, Kunal, Ankita   Website Images by Us and Google</span></p></p>	
+			</div>
+		</footer>	
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

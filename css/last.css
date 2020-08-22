@@ -1,0 +1,48 @@
+
+		
+			.last{
+				padding: 300px 20px 200px 20px;
+			}
+
+			.table{
+				background-color:#4c4c4c;
+				padding: 30px;
+				opacity: 0.7;
+				width: 100%;
+			}
+			.table tr,th,td,ul,li
+			{
+				padding: 20px;
+	  			text-align: center;
+	  			list-style: none;
+			}
+			.table th{
+				color:lightgreen;
+				font-size:30px;
+				font-weight: bold;
+			}
+			.last a{
+				color:#cccccc;
+			}
+			.last li:hover, a:hover {
+		    	background-color: green;
+				color:black;
+			}
+
+			.copyright{
+				color:#666666;
+				font-family:aral;
+				font-size:20px;
+				padding:50px;
+				padding-bottom:120px;
+				text-align:center;
+				line-height:20px;
+				border-top:1px solid #666666;
+				margin-top:50px;
+			}
+			.q{
+				border-bottom: 3px solid black;
+				border-top: 3px solid black;
+				margin: 0px;
+			}
+

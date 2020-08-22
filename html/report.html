@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<head>
+	<title>Report</title>
+</head>
+
+<body>
+		<style type="text/css">
+
+			body{
+				background-image: url(http://localhost/project/images/ok.jpg);
+				background-attachment: fixed;
+			}
+		
+			.last{
+				padding: 300px 20px 200px 20px;
+			}
+
+			.table{
+				background-color:#4c4c4c;
+				padding: 30px;
+				opacity: 0.7;
+				width: 100%;
+			}
+			.table tr,th,td,ul,li
+			{
+				padding: 20px;
+	  			text-align: center;
+	  			list-style: none;
+			}
+			.table th{
+				color:lightgreen;
+				font-size:30px;
+				font-weight: bold;
+			}
+			.last a{
+				color:#cccccc;
+				text-decoration: none;
+			}
+			.last li:hover, a:hover {
+		    	background-color: green;
+				color:black;
+			}
+
+			.copyright{
+				color:#666666;
+				font-family:aral;
+				font-size:20px;
+				padding:50px;
+				padding-bottom:120px;
+				text-align:center;
+				line-height:20px;
+				border-top:1px solid #666666;
+				margin-top:50px;
+			}
+			.main{
+				margin-top: 200px;
+			}
+			select, input, textarea{
+				padding: 10px;
+			}
+	</style>
+
+	<link rel="stylesheet" type="text/css" href="http://localhost/project/css/w3.css">
+
+	<div class="w3-container w3-tale w3-xxxlarge w3-padding-16">
+		Report Us
+	</div>
+	<div class="w3-container">		
+
+		<div class="w3-bar w3-green w3-large">
+			
+			<a href="http://localhost/project/index.php" class="w3-bar-item w3-button w3-hover-blue">Home</a>
+			<a href="http://localhost/project/html/contact.html" class="w3-bar-item w3-button">Contact Us</a>
+			<a href="http://localhost/project/html/help.html" class="w3-bar-item w3-button" >Help</a>
+			<a href="http://localhost/project/html/report.html" class="w3-bar-item w3-button">Report</a>
+			<a href="http://localhost/project/html/remarks.html" class="w3-bar-item w3-button">Remarks</a>
+			
+		</div>	
+
+		<div class="w3-padding-32">
+			<div class="w3-bottombar w3-border-blue w3-xlarge ">
+				<p>
+					Report us by sending an email for any query.
+				</p>
+			</div>
+
+
+			<div class="w3-panel w3-wide w3-center w3-padding-32">
+				<form method="POST" action="contact_report_thanks.html">
+					<div class="w3-panel w3-win8-emerald w3-padding-16  w3-leftbar w3-rightbar w3-border-white">
+						<label>
+						Select the catagory to report about.
+						</label>
+						<select>
+							<option>Technical</option>
+							<option>Communicational</option>
+							<option>Design</option>
+							<option>Help and Support</option>
+							<option>Need to Upgrade</option>
+						</select>
+					</div>
+					<div class="w3-panel w3-light-blue w3-padding-16  w3-leftbar w3-rightbar w3-border-white">
+						<label>Enter your first name: </label>
+						<input type="text" class="form-control" placeholder="First Name">	
+					</div>
+					<div class="w3-panel w3-light-green w3-padding-16  w3-leftbar w3-rightbar w3-border-white">
+						<label>Enter your last name: </label>
+						<input type="text" class="form-control" placeholder="Last Name">
+					</div>
+					<div class="w3-panel w3-orange w3-padding-16 w3-leftbar w3-rightbar w3-border-white">
+						<label>Enter your email id: </label>
+						<input type="email" class="form-control" placeholder="Email Address">
+					</div>
+					<div class="w3-panel w3-vivid-bluish-green w3-padding-32 w3-leftbar w3-rightbar w3-border-white">
+						<label>Type your message here:</label><br><br>
+						<textarea name="message" id="message" cols="30" class="form-control" rows="10"></textarea>
+					</div>
+					<button class= "w3-panel w3-vivid-bluish-green w3-padding-32 w3-leftbar w3-rightbar w3-border-white w3-button w3-red w3-padding-large w3-hover-shadow"
+						type="submit" value="Send Message">Report
+					</button>
+				</form>
+			</div>
+		</div>
+
+		<!-- list of persons -->
+			<div class="w3-container w3-center w3-margin w3-vivid-reddish-orange w3-padding-64">
+			  <h2>Our Teammates</h2>
+			  <p>This is the result of their hard work and dedication.</p>
+			  <ul class="w3-ul w3-card-3 w3-padding-large">
+			    <li class="w3-bar">
+			      <img src="http://localhost/project/images/subrata.jpg" class="w3-bar-item w3-circle w3-hide-small" style="width:85px">
+			      <div class="w3-bar-item">
+			        <span class="w3-large">Subrata</span><br>
+			        <span>Web Designer</span>
+			      </div>
+			    </li>
+			    <br>
+			    <li class="w3-bar">
+			      <img src="http://localhost/project/images/kunal.jpg" class="w3-bar-item w3-circle w3-hide-small" style="width:85px" >
+			      <div class="w3-bar-item">
+			        <span class="w3-large">Kunal</span><br>
+			        <span>Content Writer</span>
+			      </div>
+			    </li>
+			    <br>
+			    <li class="w3-bar">
+			      <img src="http://localhost/project/images/ankita.jpg" class="w3-bar-item w3-circle w3-hide-small" style="width:85px">
+			      <div class="w3-bar-item">
+			        <span class="w3-large">Ankita</span><br>
+			        <span>Support Mate</span>
+			      </div>
+			    </li>
+			  </ul>
+			</div>
+
+
+	</div>
+
+	<!-- <div class="w3-container w3-tale w3-xxxlarge w3-padding-16">
+		Report Us
+	</div>
+	<div class="w3-container">		
+
+		<div class="w3-bar w3-green w3-large">
+			
+			<a href="http://localhost/project/index.php" class="w3-bar-item w3-button w3-hover-blue">Home</a>
+			<a href="http://localhost/project/html/contact.html" class="w3-bar-item w3-button">Contact Us</a>
+			<a href="http://localhost/project/html/help.html" class="w3-bar-item w3-button" >Help</a>
+			<a href="http://localhost/project/html/report.html" class="w3-bar-item w3-button">Report</a>
+			<a href="http://localhost/project/html/remarks.html" class="w3-bar-item w3-button">Remarks</a>
+			
+		</div>
+
+	<div>
+		<p class="fh5co-social-icons">
+			<a href="#"><i class="icon-twitter"></i></a>
+			<a href="#"><i class="icon-facebook"></i></a>
+			<a href="#"><i class="icon-instagram"></i></a>
+			<a href="#"><i class="icon-dribbble"></i></a>
+			<a href="#"><i class="icon-youtube"></i></a>
+		</p>
+	</div>
+	<div>
+		<p>
+			Contact with us by sending an email for any query.
+		</p>
+	</div>
+	<div>
+		
+	</div>
+ -->
+	<footer>
+			<div class="last">
+				<table class="table">
+					<tr>
+						<th>Menu</th>
+						<th>Our Services</th>
+						<th>Social</th>
+					</tr>
+					<tr>
+						<td>
+							<ul>
+								<li><a href="#">Register</a></li>
+								<li><a href="#">Login</a></li>
+								<li><a href="#">About us</a></li>
+								<li><a href="#">Contact us</a></li>
+							</ul>
+						</td>
+						<td>
+							<ul>
+								<li><a href="#">Carrier Guide</a></li>
+								<li><a href="#">Life Decisions</a></li>
+								<li><a href="#">Fitness Guide</a></li>
+								<li><a href="#">Educational Guide</a></li>
+							</ul>
+						</td>
+						<td>
+							<ul>
+								<li><a href="#">Facebook</a></li>
+								<li><a href="#">Whats app</a></li>
+								<li><a href="#">Twitter</a></li>
+								<li><a href="#">Linkin</a></li>
+							</ul>
+						</td>
+					</tr>
+				</table>
+			</div>
+		
+			<div class="copyright">
+				<p>@2018 Better future for Students. All Rights Reserved. <p><span>Designed with by Subrata, Kunal, Ankita   Website Images by Us and Google</span></p></p>	
+			</div>
+		</footer>
+</body>
+
+
+
+
+

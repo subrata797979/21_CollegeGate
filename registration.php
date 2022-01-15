@@ -5,10 +5,10 @@
 	<meta charset="utf-8">
 	<title>Registration</title>
 
-	<link rel="stylesheet" href="http://localhost/project/css/animate.css">
-	<link rel="stylesheet" href="http://localhost/project/css/reglog.css">
-	<link rel="stylesheet" href="http://localhost/project/css/w3.css">
-	<link rel="stylesheet" href="http://localhost/project/css/last.css">
+	<link rel="stylesheet" href="./css/animate.css">
+	<link rel="stylesheet" href="./css/reglog.css">
+	<link rel="stylesheet" href="./css/w3.css">
+	<link rel="stylesheet" href="./css/last.css">
 
 </head>
 
@@ -16,11 +16,11 @@
 	
 	<div class="w3-bar w3-green w3-large" style="opacity: 0.8;">
 			
-		<a href="http://localhost/project/index.php" class="w3-bar-item w3-button w3-hover-blue">Home</a>
-		<a href="http://localhost/project/html/contact.html" class="w3-bar-item w3-button">Contact Us</a>
-		<a href="http://localhost/project/html/help.html" class="w3-bar-item w3-button" >Help</a>
-		<a href="http://localhost/project/html/report.html" class="w3-bar-item w3-button">Report</a>
-		<a href="http://localhost/project/html/remarks.html" class="w3-bar-item w3-button">Remarks</a>
+		<a href="./index.php" class="w3-bar-item w3-button w3-hover-blue">Home</a>
+		<a href="./html/contact.html" class="w3-bar-item w3-button">Contact Us</a>
+		<a href="./html/help.html" class="w3-bar-item w3-button" >Help</a>
+		<a href="./html/report.html" class="w3-bar-item w3-button">Report</a>
+		<a href="./html/remarks.html" class="w3-bar-item w3-button">Remarks</a>
 			
 	</div>
 
@@ -32,7 +32,7 @@
 			<div class="box-header">
 				<h2>Registration</h2>
 			</div>
-			<form method="POST" action="http://localhost/project/reg_code.php">
+			<form method="POST" action="./reg_code.php">
 			<label for="username">Username</label>
 			<br/>
 			<input type="text" name="username" required>

@@ -7,11 +7,11 @@
 
 	<link rel='stylesheet' type='text/css'>
 
-	<link rel="stylesheet" href="http://localhost/project/css/animate.css">
+	<link rel="stylesheet" href="./css/animate.css">
 	
-	<link rel="stylesheet" href="http://localhost/project/css/reglog.css">
+	<link rel="stylesheet" href="./css/reglog.css">
 
-	<link rel="stylesheet" href="http://localhost/project/css/w3.css">
+	<link rel="stylesheet" href="./css/w3.css">
 
 </head>
 
@@ -68,11 +68,11 @@
 
 	<div class="w3-bar w3-green w3-large" style="opacity: 0.8;">
 			
-		<a href="http://localhost/project/index.php" class="w3-bar-item w3-button w3-hover-blue">Home</a>
-		<a href="http://localhost/project/html/contact.html" class="w3-bar-item w3-button">Contact Us</a>
-		<a href="http://localhost/project/html/help.html" class="w3-bar-item w3-button" >Help</a>
-		<a href="http://localhost/project/html/report.html" class="w3-bar-item w3-button">Report</a>
-		<a href="http://localhost/project/html/remarks.html" class="w3-bar-item w3-button">Remarks</a>
+		<a href="./index.php" class="w3-bar-item w3-button w3-hover-blue">Home</a>
+		<a href="./html/contact.html" class="w3-bar-item w3-button">Contact Us</a>
+		<a href="./html/help.html" class="w3-bar-item w3-button" >Help</a>
+		<a href="./html/report.html" class="w3-bar-item w3-button">Report</a>
+		<a href="./html/remarks.html" class="w3-bar-item w3-button">Remarks</a>
 			
 	</div>
 	<div class="container" style="margin-top: 0px;">
@@ -84,7 +84,7 @@
 			<div class="box-header">
 				<h2>Log In</h2>
 			</div>
-			<form method="POST" action="http://localhost/project/log_code.php">
+			<form method="POST" action="./log_code.php">
 			<label for="email">Email</label>
 			<br/>
 			<input type="email" name="email" required>
@@ -110,7 +110,7 @@
 				?>
 			</p>
 			<br/>
-			<a href="http://localhost/project/findpass.php"><p class="small">Forgot your password?</p></a>
+			<a href="./findpass.php"><p class="small">Forgot your password?</p></a>
 		</div>
 	</div>
 

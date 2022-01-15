@@ -73,7 +73,7 @@
 			<div class="box-header">
 				<h2>Forgot password</h2>
 			</div>
-			<form method="POST" action="http://localhost/project/findpass_code.php">
+			<form method="POST" action="./findpass_code.php">
 			<label for="username">Username</label>
 			<br/>
 			<input type="username" name="username" required>

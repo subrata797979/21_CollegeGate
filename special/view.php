@@ -21,7 +21,7 @@ while($row=mysqli_fetch_assoc($result))
 	$i++;
 }
 if(!isset($c_id))
-	header('location:http://localhost/project/error.php');
+	header('location:.././error.php');
 	
 
 for($j=1;$j<=$num;$j++)
@@ -54,7 +54,7 @@ mysqli_close();
 
 	<style type="text/css">
 		body{
-				background-image: url(http://localhost/project/images/ok.jpg);
+				background-image: url(.././images/ok.jpg);
 				background-attachment: fixed;
 				/*border: 4px solid red;*/
 			}
@@ -111,7 +111,7 @@ mysqli_close();
 	</style>
 
 	<link rel="stylesheet" style="text/css" href="css/search.css">
-	<link rel="stylesheet" type="text/css" href="http://localhost/project/css/w3.css">
+	<link rel="stylesheet" type="text/css" href=".././css/w3.css">
 </head>
 
 <body>
@@ -124,11 +124,11 @@ mysqli_close();
 	<div class="w3-container w3-padding-small ">
 		<div class="w3-bar w3-green w3-large">
 			
-			<a href="http://localhost/project/index.php" class="w3-bar-item w3-button w3-hover-blue">Home</a>
-			<a href="http://localhost/project/html/contact.html" class="w3-bar-item w3-button">Contact Us</a>
-			<a href="http://localhost/project/html/help.html" class="w3-bar-item w3-button" >Help</a>
-			<a href="http://localhost/project/html/report.html" class="w3-bar-item w3-button">Report</a>
-			<a href="http://localhost/project/html/remarks.html" class="w3-bar-item w3-button">Remarks</a>
+			<a href=".././index.php" class="w3-bar-item w3-button w3-hover-blue">Home</a>
+			<a href=".././html/contact.html" class="w3-bar-item w3-button">Contact Us</a>
+			<a href=".././html/help.html" class="w3-bar-item w3-button" >Help</a>
+			<a href=".././html/report.html" class="w3-bar-item w3-button">Report</a>
+			<a href=".././html/remarks.html" class="w3-bar-item w3-button">Remarks</a>
 			
 		</div>
 		<div class="w3-center w3-padding-64">

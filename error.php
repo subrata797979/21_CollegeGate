@@ -6,7 +6,7 @@
 <body>
 	<style type="text/css">
 		body{
-				background-image: url(http://localhost/project/images/f.jpg);
+				background-image: url(./images/f.jpg);
 			}
 	
 </body>

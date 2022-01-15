@@ -21,7 +21,7 @@ while($row=mysqli_fetch_assoc($result))
 	$i++;
 }
 if(!isset($c_id))
-	header('location:http://localhost/project/error.php');
+	header('location:.././error.php');
 	
 
 for($j=1;$j<=$num;$j++)
@@ -52,7 +52,7 @@ mysqli_close();
 	<style type="text/css">
 
 			body{
-				background-image: url(http://localhost/project/images/ok.jpg);
+				background-image: url(.././images/ok.jpg);
 				background-attachment: fixed;
 			}
 		
@@ -102,7 +102,7 @@ mysqli_close();
 			}
 	</style>
 
-	<link rel="stylesheet" type="text/css" href="http://localhost/project/css/w3.css">
+	<link rel="stylesheet" type="text/css" href=".././css/w3.css">
 
 	<div class="w3-container w3-tale w3-xxxlarge w3-padding-16">
 		Delete College
@@ -111,11 +111,11 @@ mysqli_close();
 
 		<div class="w3-bar w3-green w3-large">
 			
-			<a href="http://localhost/project/index.php" class="w3-bar-item w3-button w3-hover-blue">Home</a>
-			<a href="http://localhost/project/html/contact.html" class="w3-bar-item w3-button">Contact Us</a>
-			<a href="http://localhost/project/html/help.html" class="w3-bar-item w3-button" >Help</a>
-			<a href="http://localhost/project/html/report.html" class="w3-bar-item w3-button">Report</a>
-			<a href="http://localhost/project/html/remarks.html" class="w3-bar-item w3-button">Remarks</a>
+			<a href=".././index.php" class="w3-bar-item w3-button w3-hover-blue">Home</a>
+			<a href=".././html/contact.html" class="w3-bar-item w3-button">Contact Us</a>
+			<a href=".././html/help.html" class="w3-bar-item w3-button" >Help</a>
+			<a href=".././html/report.html" class="w3-bar-item w3-button">Report</a>
+			<a href=".././html/remarks.html" class="w3-bar-item w3-button">Remarks</a>
 			
 		</div>
 		
@@ -139,7 +139,7 @@ mysqli_close();
 			{
 			?>
 			
-		<form method="POST" action="http://localhost/project/special/del.php" >
+		<form method="POST" action=".././special/del.php" >
 			<tr>
 				<td><input type="radio" name="done" value="<?php echo $c_id[$j]; ?>"></td>
 				<td><?php echo $n[$j]; ?></td>

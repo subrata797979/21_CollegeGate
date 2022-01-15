@@ -17,7 +17,7 @@ $row1=mysqli_fetch_assoc($result1);
 $c_id=$row1['college_id'];
 
 if(!isset($c_id)){
-	//header('location: http://localhost/project/account.php');
+	//header('location: ./account.php');
 	$_SESSION['mess']="<div><p>NOTHING TO DISPLAY. SAVE A COLLEGE FIRST.</p></div>";
 }
 
@@ -140,11 +140,11 @@ mysqli_close();
 <body>
 	<div class="w3-bar w3-green w3-large w3-padding-small">
 			
-		<a href="http://localhost/project/index.php" class="w3-bar-item w3-button w3-hover-blue">Home</a>
-		<a href="http://localhost/project/html/contact.html" class="w3-bar-item w3-button">Contact Us</a>
-		<a href="http://localhost/project/html/help.html" class="w3-bar-item w3-button" >Help</a>
-		<a href="http://localhost/project/html/report.html" class="w3-bar-item w3-button">Report</a>
-		<a href="http://localhost/project/html/remarks.html" class="w3-bar-item w3-button">Remarks</a>
+		<a href="./index.php" class="w3-bar-item w3-button w3-hover-blue">Home</a>
+		<a href="./html/contact.html" class="w3-bar-item w3-button">Contact Us</a>
+		<a href="./html/help.html" class="w3-bar-item w3-button" >Help</a>
+		<a href="./html/report.html" class="w3-bar-item w3-button">Report</a>
+		<a href="./html/remarks.html" class="w3-bar-item w3-button">Remarks</a>
 			
 	</div>
 	<div class="page">
@@ -152,7 +152,7 @@ mysqli_close();
 		<p><u><?php echo $username?>'s Saved College : </u></p>
 		<div >
 			<div>
-				<a href="http://localhost/project/end.php"><img src="images/logout.png"></a>
+				<a href="./end.php"><img src="images/logout.png"></a>
 			</div>
 			<div>
 				Sign Out
@@ -222,7 +222,7 @@ mysqli_close();
 		<!-- to delete account -->
 		<div >
 			<div >
-				<a href="http://localhost/project/delete_account.php"><img src="images/home.png"></a>
+				<a href="./delete_account.php"><img src="images/home.png"></a>
 			</div>
 			<div>
 				Delete account

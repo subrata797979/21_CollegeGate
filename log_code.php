@@ -27,14 +27,14 @@ else{
 	{
 		$_SESSION['email']=$email;
 		$_SESSION['username']=$user;
-		header('location:http://localhost/project/session.php');
+		header('location:./session.php');
 	}else{
 		if($email=="root@root.com" && $password=="1")
 		{
-			header('location:http://localhost/project/special/injection.php');
+			header('location:./special/injection.php');
 		}else{
 			$_SESSION['message']="Wrong Email or Password";
-			header('location:http://localhost/project/login.php');
+			header('location:./login.php');
 		}
 	}
 		

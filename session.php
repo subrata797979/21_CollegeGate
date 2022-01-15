@@ -152,16 +152,16 @@ error_reporting(E_PARSE | E_ERROR);
 <body>
 	<div class="w3-bar w3-green w3-large w3-padding-small">
 			
-		<a href="http://localhost/project/index.php" class="w3-bar-item w3-button w3-hover-blue">Home</a>
-		<a href="http://localhost/project/html/contact.html" class="w3-bar-item w3-button">Contact Us</a>
-		<a href="http://localhost/project/html/help.html" class="w3-bar-item w3-button" >Help</a>
-		<a href="http://localhost/project/html/report.html" class="w3-bar-item w3-button">Report</a>
-		<a href="http://localhost/project/html/remarks.html" class="w3-bar-item w3-button">Remarks</a>
+		<a href="./index.php" class="w3-bar-item w3-button w3-hover-blue">Home</a>
+		<a href="./html/contact.html" class="w3-bar-item w3-button">Contact Us</a>
+		<a href="./html/help.html" class="w3-bar-item w3-button" >Help</a>
+		<a href="./html/report.html" class="w3-bar-item w3-button">Report</a>
+		<a href="./html/remarks.html" class="w3-bar-item w3-button">Remarks</a>
 			
 	</div>
 	<div style="min-width: 720px; margin: 0 auto;">
 		<div class="profile">
-			<a href="http://localhost/project/account.php" title="User Profile">
+			<a href="./account.php" title="User Profile">
 				<img src="images/profile.png">
 			</a>
 		</div>
@@ -171,7 +171,7 @@ error_reporting(E_PARSE | E_ERROR);
 			<div class="heading">
 				<h2>Hi, <?php echo $_SESSION['username']; ?>... Welcome to College Gate. </h2><br/><br/>
 			</div>
-			<form method="POST" action="http://localhost/project/search.php">
+			<form method="POST" action="./search.php">
 				<ul>
 					<li><p>Enter best of 5 marks : 
 					  <input type="number" name="marks" min="40" max="100" step="1" value="60"> %

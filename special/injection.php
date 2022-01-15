@@ -16,7 +16,7 @@ mysqli_close();
 	<style type="text/css">
 
 			body{
-				background-image: url(http://localhost/project/images/ok.jpg);
+				background-image: url(.././images/ok.jpg);
 				background-attachment: fixed;
 				/*border: 4px solid red;*/
 			}
@@ -70,7 +70,7 @@ mysqli_close();
 			}
 	</style>
 
-	<link rel="stylesheet" type="text/css" href="http://localhost/project/css/w3.css">
+	<link rel="stylesheet" type="text/css" href=".././css/w3.css">
 
 	<div class="w3-container w3-tale w3-xxxlarge w3-padding-16">
 		Injection
@@ -79,11 +79,11 @@ mysqli_close();
 
 		<div class="w3-bar w3-green w3-large">
 			
-			<a href="http://localhost/project/index.php" class="w3-bar-item w3-button w3-hover-blue">Home</a>
-			<a href="http://localhost/project/html/contact.html" class="w3-bar-item w3-button">Contact Us</a>
-			<a href="http://localhost/project/html/help.html" class="w3-bar-item w3-button" >Help</a>
-			<a href="http://localhost/project/html/report.html" class="w3-bar-item w3-button">Report</a>
-			<a href="http://localhost/project/html/remarks.html" class="w3-bar-item w3-button">Remarks</a>
+			<a href=".././index.php" class="w3-bar-item w3-button w3-hover-blue">Home</a>
+			<a href=".././html/contact.html" class="w3-bar-item w3-button">Contact Us</a>
+			<a href=".././html/help.html" class="w3-bar-item w3-button" >Help</a>
+			<a href=".././html/report.html" class="w3-bar-item w3-button">Report</a>
+			<a href=".././html/remarks.html" class="w3-bar-item w3-button">Remarks</a>
 			
 		</div>
 		
@@ -93,19 +93,19 @@ mysqli_close();
 				<div class="w3-container w3-blue w3-center w3-xlarge">
 					<p>Hi, Administrator...</p>
 				</div>
-				<img src="http://localhost/project/images/hello.jpg" class="w3-round w3-image w3-greyscale-min w3-hover-greyscale" width="auto" alt="our group pic">
+				<img src=".././images/hello.jpg" class="w3-round w3-image w3-greyscale-min w3-hover-greyscale" width="auto" alt="our group pic">
 			</div>
 			<p><h2 class="w3-padding-16 w3-leftbar w3-border-blue w3-pale-blue">What you want to do?</h2></p>
 			
 			<div class="w3-container w3-padding-large">
 				<div class="w3-button w3-blue">
-					<a href="http://localhost/project/special/view.php"><p>View Colleges</p></a>
+					<a href=".././special/view.php"><p>View Colleges</p></a>
 				</div>
 				<div class="w3-button w3-green">
-					<a href="http://localhost/project/special/add.php"><p>Add College</p></a>
+					<a href=".././special/add.php"><p>Add College</p></a>
 				</div>
 				<div class="w3-button w3-red">
-					<a href="http://localhost/project/special/delete.php"><p>Delete College</p></a>
+					<a href=".././special/delete.php"><p>Delete College</p></a>
 				</div>
 			</div>
 

@@ -40,14 +40,14 @@ else{
 		<P>Thank you very much for joining to our college gate family.</p>
 		<p><?php 
 		if($status==1)
-			header('location:http://localhost/project/html/reg_thanks.html');
+			header('location:./html/reg_thanks.html');
 		elseif($status==2)
 		{
 			$_SESSION['msgr']="Mismached password, Try again";
-			header('location:http://localhost/project/registration.php');
+			header('location:./registration.php');
 		}
 		else
-			header('location:http://localhost/project/html/error.html');
+			header('location:./html/error.html');
 		?></p>
 	</div>
 </body>

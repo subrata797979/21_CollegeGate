@@ -25,7 +25,7 @@ $res3=mysqli_query($con,$q3);
 
 
 $_SESSION['ms']="<p>Selected entry deleted successfully</p>";
-header('location:http://localhost/project/special/delete_thanks.html');
+header('location:.././special/delete_thanks.html');
 mysqli_close();
 ?>
 

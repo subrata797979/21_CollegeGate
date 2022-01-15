@@ -27,10 +27,10 @@ else{
 	{
 		$_SESSION['password']=$password;
 		$_SESSION['username']=$username;
-		header('location:http://localhost/project/forgot.php');
+		header('location:./forgot.php');
 	}else{
 		$_SESSION['message']="Wrong Username or Email entered";
-		header('location:http://localhost/project/findpass.php');
+		header('location:./findpass.php');
 	}
 		
 }

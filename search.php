@@ -27,7 +27,7 @@ while($row=mysqli_fetch_assoc($result))
 	$i++;
 }
 if(!isset($c_id))
-	header('location:http://localhost/project/error.php');
+	header('location:./error.php');
 	
 
 for($j=1;$j<=$num;$j++)
@@ -140,11 +140,11 @@ mysqli_close();
 
 	<div class="w3-bar w3-green w3-large w3-padding-small">
 			
-			<a href="http://localhost/project/index.php" class="w3-bar-item w3-button w3-hover-blue">Home</a>
-			<a href="http://localhost/project/html/contact.html" class="w3-bar-item w3-button">Contact Us</a>
-			<a href="http://localhost/project/html/help.html" class="w3-bar-item w3-button" >Help</a>
-			<a href="http://localhost/project/html/report.html" class="w3-bar-item w3-button">Report</a>
-			<a href="http://localhost/project/html/remarks.html" class="w3-bar-item w3-button">Remarks</a>
+			<a href="./index.php" class="w3-bar-item w3-button w3-hover-blue">Home</a>
+			<a href="./html/contact.html" class="w3-bar-item w3-button">Contact Us</a>
+			<a href="./html/help.html" class="w3-bar-item w3-button" >Help</a>
+			<a href="./html/report.html" class="w3-bar-item w3-button">Report</a>
+			<a href="./html/remarks.html" class="w3-bar-item w3-button">Remarks</a>
 			
 		</div>
 	
@@ -185,7 +185,7 @@ mysqli_close();
 				<br/>
 				
 				<div class>
-					<a href="http://localhost/project/selection.php">
+					<a href="./selection.php">
 						<button>Select</button>
 					</a>
 				</div>

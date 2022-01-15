@@ -16,7 +16,7 @@ $password=$_SESSION['password'];
 <body>
 	<style type="text/css">
 		body{
-				background-image: url(http://localhost/project/images/ok.jpg);
+				background-image: url(./images/ok.jpg);
 				background-attachment: fixed;
 			}
 
@@ -69,7 +69,7 @@ $password=$_SESSION['password'];
 	</style>
 
 
-	<link rel="stylesheet" type="text/css" href="http://localhost/project/css/w3.css">
+	<link rel="stylesheet" type="text/css" href="./css/w3.css">
 
 	<div class="w3-container w3-tale w3-xxxlarge w3-padding-16 w3-center">
 		Forgot Password
@@ -79,15 +79,15 @@ $password=$_SESSION['password'];
 
 		<div class="w3-bar w3-green w3-large w3-padding-small">
 			
-			<a href="http://localhost/project/index.php" class="w3-bar-item w3-button w3-hover-blue">Home</a>
-			<a href="http://localhost/project/html/contact.html" class="w3-bar-item w3-button">Contact Us</a>
-			<a href="http://localhost/project/html/help.html" class="w3-bar-item w3-button" >Help</a>
-			<a href="http://localhost/project/html/report.html" class="w3-bar-item w3-button">Report</a>
-			<a href="http://localhost/project/html/remarks.html" class="w3-bar-item w3-button">Remarks</a>
+			<a href="./index.php" class="w3-bar-item w3-button w3-hover-blue">Home</a>
+			<a href="./html/contact.html" class="w3-bar-item w3-button">Contact Us</a>
+			<a href="./html/help.html" class="w3-bar-item w3-button" >Help</a>
+			<a href="./html/report.html" class="w3-bar-item w3-button">Report</a>
+			<a href="./html/remarks.html" class="w3-bar-item w3-button">Remarks</a>
 			
 		</div>
 		<div class="w3-padding-48">
-			<img class="w3-image w3-round-large w3-hover-greyscale" src="http://localhost/project/images/forgot.gif">
+			<img class="w3-image w3-round-large w3-hover-greyscale" src="./images/forgot.gif">
 			<br/>
 			<div class="w3-container w3-border-white left w3-text w3-xxlarge w3-text-white">
 			<P>

@@ -20,7 +20,7 @@ $select=mysqli_select_db($con,'project');
 
 if($select!=1)
 {
-	header('location:http://localhost/project/error.php');
+	header('location:.././error.php');
 }else{
 	$q="INSERT INTO college (name, university, address, email, website, phone) VALUES('$name','$university','$address','$email','$website','$ph')";
 	mysqli_query($con,$q);
@@ -43,15 +43,15 @@ $_SESSION['college']=$college_id;
 	<!-- Google Fonts -->
 	<link rel='stylesheet' type='text/css'>
 
-	<link rel="stylesheet" href="http://localhost/project/css/animate.css">
+	<link rel="stylesheet" href=".././css/animate.css">
 	<!-- Custom Stylesheet -->
-	<link rel="stylesheet" href="http://localhost/project/css/reglog.css">
+	<link rel="stylesheet" href=".././css/reglog.css">
 </head>
 <body>
 	<style type="text/css">
 
 			body{
-				background-image: url(http://localhost/project/images/ok.jpg);
+				background-image: url(.././images/ok.jpg);
 				background-attachment: fixed;
 				/*border: 4px solid red;*/
 			}
@@ -102,7 +102,7 @@ $_SESSION['college']=$college_id;
 			}
 	</style>
 
-	<link rel="stylesheet" type="text/css" href="http://localhost/project/css/w3.css">
+	<link rel="stylesheet" type="text/css" href=".././css/w3.css">
 
 	<div class="w3-container w3-tale w3-xxxlarge w3-padding-16">
 		Subject Marks
@@ -111,11 +111,11 @@ $_SESSION['college']=$college_id;
 
 		<div class="w3-bar w3-green w3-large">
 			
-			<a href="http://localhost/project/index.php" class="w3-bar-item w3-button w3-hover-blue">Home</a>
-			<a href="http://localhost/project/html/contact.html" class="w3-bar-item w3-button">Contact Us</a>
-			<a href="http://localhost/project/html/help.html" class="w3-bar-item w3-button" >Help</a>
-			<a href="http://localhost/project/html/report.html" class="w3-bar-item w3-button">Report</a>
-			<a href="http://localhost/project/html/remarks.html" class="w3-bar-item w3-button">Remarks</a>
+			<a href=".././index.php" class="w3-bar-item w3-button w3-hover-blue">Home</a>
+			<a href=".././html/contact.html" class="w3-bar-item w3-button">Contact Us</a>
+			<a href=".././html/help.html" class="w3-bar-item w3-button" >Help</a>
+			<a href=".././html/report.html" class="w3-bar-item w3-button">Report</a>
+			<a href=".././html/remarks.html" class="w3-bar-item w3-button">Remarks</a>
 			
 		</div>
 
@@ -127,7 +127,7 @@ $_SESSION['college']=$college_id;
 				<div class="box-header">
 					<h2>Subject Cutoff Marks</h2>
 				</div>
-				<form method="POST" action="http://localhost/project/special/subject_code.php">
+				<form method="POST" action=".././special/subject_code.php">
 				<br/>
 				<label for="a">Science Group</label>
 				<br/>

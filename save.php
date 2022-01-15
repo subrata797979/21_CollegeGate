@@ -157,11 +157,11 @@ mysqli_close();
 <body>
 	<div class="w3-bar w3-green w3-large w3-padding-small">
 			
-		<a href="http://localhost/project/index.php" class="w3-bar-item w3-button w3-hover-blue">Home</a>
-		<a href="http://localhost/project/html/contact.html" class="w3-bar-item w3-button">Contact Us</a>
-		<a href="http://localhost/project/html/help.html" class="w3-bar-item w3-button" >Help</a>
-		<a href="http://localhost/project/html/report.html" class="w3-bar-item w3-button">Report</a>
-		<a href="http://localhost/project/html/remarks.html" class="w3-bar-item w3-button">Remarks</a>
+		<a href="./index.php" class="w3-bar-item w3-button w3-hover-blue">Home</a>
+		<a href="./html/contact.html" class="w3-bar-item w3-button">Contact Us</a>
+		<a href="./html/help.html" class="w3-bar-item w3-button" >Help</a>
+		<a href="./html/report.html" class="w3-bar-item w3-button">Report</a>
+		<a href="./html/remarks.html" class="w3-bar-item w3-button">Remarks</a>
 			
 	</div>
 
@@ -174,7 +174,7 @@ mysqli_close();
 		<div class="item">
 			<div class="heading">
 				Your selection has been saved successfully		
-				<p><img style="resize: auto;" src="http://localhost/project/images/th.gif"></p>		
+				<p><img style="resize: auto;" src="./images/th.gif"></p>		
 			</div>
 			
 			<p>Write your review about our website</p>
@@ -185,7 +185,7 @@ mysqli_close();
 			<br>
 			<br>
 			<div>
-				<a href="http://localhost/project/end.php"><button class="button">Sign Out</button></a>
+				<a href="./end.php"><button class="button">Sign Out</button></a>
 			</div>
 			<br>
 			<br>

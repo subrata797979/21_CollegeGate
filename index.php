@@ -269,10 +269,10 @@ error_reporting(E_PARSE | E_ERROR);
 			
 			<div class="header">
 				<ul>
-					<li><a href="http://localhost/project/registration.php" class="link">REGISTER</a></li>
+					<li><a href="./registration.php" class="link">REGISTER</a></li>
 
 <!--PHP code=======================================================-->					
-					<li><a href="http://localhost/project/	
+					<li><a href="./	
 						<?php
 							if(isset($_SESSION['username']))
 								echo"session.php";

@@ -1,10 +1,11 @@
 <?php
+include './configDb.php';
 session_start();
 error_reporting(E_PARSE|E_ERROR);
 
 
 $email=$_SESSION['email'];
-$con=mysqli_connect('localhost','root');
+// $con=mysqli_connect('localhost','root');
 $db=mysqli_select_db($con,'project');
 if($db!=1)
 {

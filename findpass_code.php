@@ -1,4 +1,5 @@
 <?php
+include './configDb.php';
 session_start();
 //for hiding errors
 error_reporting(E_PARSE | E_ERROR);
@@ -7,7 +8,7 @@ error_reporting(E_PARSE | E_ERROR);
 $email=$_POST['email'];
 $username=$_POST['username'];
 
-$con=mysqli_connect('localhost','root');
+// $con=mysqli_connect('localhost','root');
 $select=mysqli_select_db($con,'project');
 if($select!=1)
 {

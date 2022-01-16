@@ -35,6 +35,6 @@ else{
 	}
 		
 }
-mysql_free_result();
-mysqli_close();
+
+mysqli_close($con);
 ?>

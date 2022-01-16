@@ -12,7 +12,7 @@ error_reporting(E_PARSE | E_ERROR);
 		<title>
 		Homepage
 		</title> 
-		<link rel="stylesheet" style="text/css" href="css/n2.css">
+		<link rel="stylesheet" href="css/n2.css">
 	</head>
 	<body>
 		<style type="text/css">

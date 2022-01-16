@@ -26,7 +26,7 @@ if(!isset($c_id)){
 $q2="select * from college where college_id='$c_id'";
 $result2=mysqli_query($con,$q2);
 
-mysqli_close();
+mysqli_close($con);
 ?>
 
 

@@ -5,7 +5,7 @@ session_start();
 //for hiding errors
 error_reporting(E_PARSE | E_ERROR);
 
-mysqli_close();
+mysqli_close($con);
 ?>
 
 <!DOCTYPE html>

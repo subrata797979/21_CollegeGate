@@ -1,4 +1,5 @@
 <?php
+include './configDb.php';
 session_start();
 $email=$_SESSION['email'];
 //for hiding errors
@@ -6,13 +7,13 @@ error_reporting(E_PARSE | E_ERROR);
 
 $c_id=$_POST['done'];
 
-$con=mysqli_connect('localhost','root');
-$select=mysqli_select_db($con,'project');
+// $con=mysqli_connect('localhost','root');
+// $select=mysqli_select_db($con,'project');
 
 $q="UPDATE user SET college_id = '$c_id' WHERE email ='$email'";
 
 $res=mysqli_query($con,$q);
-mysqli_close();
+mysqli_close($con);
 ?>
 
 <!DOCTYPE html>

@@ -1,4 +1,5 @@
 <?php
+include './configDb.php';
 session_start();
 //for hiding errors
 error_reporting(E_PARSE | E_ERROR);
@@ -7,8 +8,8 @@ error_reporting(E_PARSE | E_ERROR);
 $marks=$_SESSION['marks'];
 $subject=$_SESSION['subject'];
 
-$con=mysqli_connect('localhost','root');
-$select=mysqli_select_db($con,'project');
+// $con=mysqli_connect('localhost','root');
+// $select=mysqli_select_db($con,'project');
 
 
 //Collecting college_id from college_subject table
@@ -45,7 +46,7 @@ while($row=mysqli_fetch_assoc($result2))
 	}
 }	
 	
-mysqli_close();
+mysqli_close($con);
 ?>
 
 <!DOCTYPE html>
@@ -140,7 +141,7 @@ mysqli_close();
 			background-color:#4ca64c;
 		}
 	</style>
-	<link rel="stylesheet" style="text/css" href="css/search.css">
+	<link rel="stylesheet" href="css/search.css">
 </head>
 
 <body>

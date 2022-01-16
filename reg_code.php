@@ -19,7 +19,7 @@ else{
 	$sql="INSERT INTO user (username,email,password) VALUES('$username','$email','$password')";
 	$status=mysqli_query($con,$sql);
 	
-	mysqli_close();
+	mysqli_close($con);
 }
 ?>
 <!DOCTYPE HTML>
@@ -29,7 +29,7 @@ else{
 		Registration
 	</title>
 		<h2>Registration Form</h2>
-	<link rel="stylesheet" style="text/css" href="css/thank.css">
+	<link rel="stylesheet" href="css/thank.css">
 	<div style="min-width: 900px; margin: 0 auto;">
 </head>
 <body>

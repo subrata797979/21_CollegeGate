@@ -1,4 +1,5 @@
 <?php
+include './configDb.php';
 session_start();
 //for hiding errors
 error_reporting(E_PARSE | E_ERROR);
@@ -11,8 +12,8 @@ $subject=$_POST['subject'];
 $_SESSION['marks']=$marks;
 $_SESSION['subject']=$subject;
 
-$con=mysqli_connect('localhost','root');
-$select=mysqli_select_db($con,'project');
+// $con=mysqli_connect('localhost','root');
+// $select=mysqli_select_db($con,'project');
 
 //Collecting college_id from college_subject table
 $q="select college_id from college_subject where cutoff between 0 and '$marks' && subject='$subject'";
@@ -47,7 +48,7 @@ while($row=mysqli_fetch_assoc($result2))
 	}
 }	
 	
-mysqli_close();
+mysqli_close($con);
 ?>
 
 <!DOCTYPE html>
@@ -131,7 +132,7 @@ mysqli_close();
 
 		}
 	</style>
-	<link rel="stylesheet" style="text/css" href="css/search.css">
+	<link rel="stylesheet" href="css/search.css">
 </head>
 
 <body>

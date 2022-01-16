@@ -10,8 +10,8 @@ $password=$_POST['password'];
 
 
 // $con=mysqli_connect('localhost','root');
-$select=mysqli_select_db($con,'project');
-if($select!=1)
+// $select=mysqli_select_db($con,'project');
+if(!$con)
 {
 	echo"Error occures to login...".mysqli_connect_error();
 }
@@ -40,8 +40,7 @@ else{
 	}
 		
 }
-mysql_free_result();
-mysqli_close();
+mysqli_close($con);
 ?>
 
 

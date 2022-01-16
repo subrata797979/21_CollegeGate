@@ -167,9 +167,9 @@ mysqli_close($con);
 	</div>
 
 	<div class="profile">
-			<a href="account.php" title="User Profile">
-				<img src="images/profile.png">
-			</a>
+		<a href="./account.php" title="User Profile">
+			<img src="images/profile.png">
+		</a>
 	</div>
 	<div class="page">
 		<div class="item">

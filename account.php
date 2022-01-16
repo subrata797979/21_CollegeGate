@@ -9,7 +9,7 @@ $email=$_SESSION['email'];
 $username=$_SESSION['username'];
 
 // $con=mysqli_connect('localhost','root');
-$select=mysqli_select_db($con,'project');
+// $select=mysqli_select_db($con,'project');
 
 //retriving c_id from user
 $q1="select college_id from user where email='$email'";

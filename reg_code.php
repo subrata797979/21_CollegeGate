@@ -1,4 +1,5 @@
 <?php
+include './configDb.php';
 session_start();
 //for hiding errors
 error_reporting(E_PARSE | E_ERROR);
@@ -13,8 +14,8 @@ if($password2!=$password)
 	$status=2;
 }
 else{
-	$con=mysqli_connect('localhost','root');
-	$select=mysqli_select_db($con,'project');
+	// $con=mysqli_connect('localhost','root');
+	// $select=mysqli_select_db($con,'project');
 	
 	$sql="INSERT INTO user (username,email,password) VALUES('$username','$email','$password')";
 	$status=mysqli_query($con,$sql);

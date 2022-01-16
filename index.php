@@ -308,7 +308,7 @@ error_reporting(E_PARSE | E_ERROR);
 			<div class="card">
 				<div class="c1">
 					<!-- heading -->
-					Why Choose Us
+					Why Choose Us ???!!!
 				</div>
 				<br>	
 				<div class="c2">

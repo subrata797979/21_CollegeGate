@@ -1,6 +1,15 @@
 # CollegeGate
 A website to choose perfect college
 
+
+
+Live Demo
+-------------------
+https://collegegate797979.herokuapp.com/
+
+
+
+
 # Registration
 ![1](https://user-images.githubusercontent.com/35250133/126728420-e4a1fc5b-fd13-408c-a5e4-70ae3e918bdf.PNG)
 

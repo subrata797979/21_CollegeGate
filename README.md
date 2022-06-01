@@ -9,6 +9,8 @@ https://collegegate797979.herokuapp.com/
 
 
 
+# Home
+![image](https://user-images.githubusercontent.com/35250133/171448389-058f6c0e-c802-4423-9ca7-0961eab6740c.png)
 
 # Registration
 ![1](https://user-images.githubusercontent.com/35250133/126728420-e4a1fc5b-fd13-408c-a5e4-70ae3e918bdf.PNG)

@@ -3,6 +3,14 @@ A website to choose perfect college
 
 
 
+## Revamped CollegeGate with MEAN Stack
+https://github.com/subrata797979/CollegeGateRevampedFrontend
+
+
+
+
+
+
 Live Demo
 -------------------
 https://collegegate797979.herokuapp.com/
